@@ -1,32 +1,29 @@
-// App.tsx
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import LoginScreen from './screen/LoginScreen';
 
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <View>
-        <Text className='text-2xl font-thin bottom-2'>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
+      <View style={styles.innerContainer}>
+        <LoginScreen />
       </View>
     </View>
   );
 };
 
-export default App;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#140034', // Set the background color of the entire app
   },
   innerContainer: {
     flex: 1,
+    paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'white',
+    width: '100%', // Ensure the inner container takes full width
   },
 });
+
+export default App;
