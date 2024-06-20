@@ -1,54 +1,52 @@
-# It is a Simple LoginScreen
+# frontend
 
-This This project was bootstrapped with [Create Expo App](https://docs.expo.dev/get-started/installation/). It includes basic setup instructions to get you started.
+## Prerequsites:
 
-## Prerequisites
+### In Development machine
+1. node version > 18
+2. npm version > 8
+3. expo-cli
+4. You may need the Android SDK as well. Xcode is not needed for IOS development.
 
-Before getting started, ensure you have the following installed on your machine:
+### For testing in android
+1. Expo Go app
+<br><b>Note:</b> Sometimes it is installed automatically if you have the device connected via adb and run the project.
 
-- [Node.js](https://nodejs.org/) (version 14 or later)
+### For testing in IOS
+1. Expo Go app
+<br><b>Note:</b> Download from app store and connect with the camera app.
+*************************************
 
+## To run the program
 
-## Frontend Setup
+PWD: Project Root dir
 
-1. Clone this repository:
+Step 1: Install all the required packages
+<code>
+yarn set version berry
+yarn install
+</code>
 
-   ```bash
-   git clone <https://github.com/harshit-1245/loginxz.git>
-   ```
+You will find it in the node_modules folder.
 
-2. Navigate to the frontend directory:
+Step 2: Make sure either you are running an android/IOS emulator or connected a device. 
+<br>For more information:
+<br>[Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+<br>[IOS Emulator](https://docs.expo.dev/workflow/ios-simulator/)
+<br>[USB connected android device](https://developer.android.com/studio/run/device#developer-device-options)
 
-   ```bash
-   cd psync
-   ```
+Step 3: Build and run the program<br>
+a. For Android
+<code>
+yarn start --android
+</code>
 
-3. Install dependencies:
+b. For IOS
+<code>
+yarn start --ios
+</code>
 
-   ```bash
-   yarn install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   yarn start
-   ```
-
-   This will start the expo development server. Use expo app to view your app.
-    
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
+c. For Web
+<code>
+yarn start --web
+</code>
